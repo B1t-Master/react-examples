@@ -5,9 +5,11 @@ const COLORS = ['pink', 'green', 'blue', 'yellow', 'purple'];
 
 function App() {
   const [backgroundColor, setBackgroundColor] = useState(COLORS[0]);
+  const [counter, setCounter] = useState(0);
 
   const onButtonClick = (color) => () => {
     setBackgroundColor(color);
+    setCounter(counter + 1);
   };
 
   return (
@@ -27,6 +29,7 @@ function App() {
           {color}
         </button>
       ))}
+      <div className="counter">Counter {counter}</div>
     </div>
   );
 }

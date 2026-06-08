@@ -35,3 +35,12 @@
   outline: 5px solid #000;
   background-color: #fff;
 }
+
+.App .counter {
+  position: absolute;
+  font-size: large;
+  font-weight: 700;
+  transform: translate(0, 90px);
+  margin-left: auto;
+  margin-right: auto;
+}
